@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "BeeMobBUADSDK"
-s.version      = "1.0.2"
+s.version      = "1.0.3"
 s.summary      = "穿山甲广告平台sdk"
 s.description  = <<-DESC
 1.0.0 第一个版本发布
