@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "BeeMobBUADSDK"
-s.version      = "1.0.1"
+s.version      = "1.0.2"
 s.summary      = "穿山甲广告平台sdk"
 s.description  = <<-DESC
 1.0.0 第一个版本发布
@@ -15,7 +15,8 @@ s.author             = { "5hito" => "beemans@foxmail.com" }
 s.ios.deployment_target    = '8.0'
 s.source       = { :git => "https://github.com/5hito/BeeMobBUADSDK.git", :tag => s.version.to_s }
 
-s.frameworks = "StoreKit"
+s.frameworks = "AdSupport", "WebKit", "CoreTelephony", "StoreKit", "CoreLocation", "SystemConfiguration", "Security", "CoreMedia", "AVFoundation", "MediaPlayer", "MobileCoreServices", "Photos", "CoreMotion"
+s.libraries = "z", "c++", "resolv.9"
 
 s.xcconfig = { "OTHER_LINK_FLAG" => '$(inherited) -ObjC' }
 
